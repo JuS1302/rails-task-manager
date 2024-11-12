@@ -1,3 +1,9 @@
 <h1>La liste des mes tasks</h1>
 
-<%= @tasks %>
+<ul>
+<% @tasks.each do |task| %>
+<li> <%= task.title %></li>
+<% end %>
+</ul>
+
+<%# on ajoute un link_to dans le task.title %>
